@@ -87,6 +87,20 @@ Some of the frequently used flags could be:
 
 ### `du / df`
 
+`du` is used to find information on disk usage. If you want to find disk usage information for a particular folder you can use `du {folder}`.
+
+Some of the most used flags are:
+
+`du -h`: Gives output in human readable format.
+`du -h -m`: Gives output in MB in a human readable format. 
+
+`df` is used to find information on free disk space. df gives you an output for all mounted disk on the system. 
+
+Some of the most used flags are:
+
+`df -h`: Gives output in human readable format. 
+`df -h --total`: You can use this option when all mounted filesystem are on the same system.
+
 ### `rsync`
 
 ### `top`

@@ -136,8 +136,33 @@ To copy a file from a remote server using sshm you can use the following command
 
 It's highly recommended to use dry run before you rsync, the output will tell you what will be synced across:
 `rsync --dry-run -zvh source destination`
-
 ### `top`
+
+This command will show you the list of Linux processes. This is supposed to be a summary page and as soon as you type `top`, it will show you a dashboard of running processes in the Linux Kernel. You can type q to quit from the summary page. 
+
+The following columns are shown in the top dashboard: 
+
+-PID: Task unique process ID
+-PR: Process priority, the lower the number the higher is the priority
+-VIRT: Total virtual memory used by the task
+-USER: Owner of the task
+-%CPU: CPU usage
+-TIME: CPU time
+-SHR: Shared memory in KB used by a task
+-NI: Nice value of a task, a negative NIC implies higher priority and positive NI represents lower priority. 
+-%MEM: Memory usage of a task
+-RES: How much physical RAM is the process using
+-COMMAND: The name of the command that stated the process. 
+
+This [link](https://www.redhat.com/sysadmin/interpret-top-output) has all the detailed informaton on what the first 4 lines of the summary page. 
+
+Some of the most used commands are listed below
+
+`top -u suhail`
+This command will list all the process for the user Suhail
+
+`top -s`
+Runs in secure mode
 
 ### `ps`
 
@@ -145,6 +170,12 @@ It's highly recommended to use dry run before you rsync, the output will tell yo
 
 ### `uptime`
 
+This is simple command which tells you the system uptime. 
+
+Some of the commonly used uptime commands are:
+
+`uptime -p`: Pretty flag
+`uptime -s`: Uptime since
 ### `dmesg`
 
 ### `netstat`

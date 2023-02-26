@@ -183,6 +183,17 @@ Some of the commonly used commands are listed below:
 
 ### `lsof`
 
+This command will list all open files (as per man)
+
+Some of the most used commands are below:
+
+`lsof -u suhail`: Displays open file for user suhail
+`lsof -i TCP:22`: Displays process running on specific port 22
+`lsof -i 4`: Shows IPv4 network files opened, 6 can be used for IPv6
+`lsof -i TCP:1-1024`: Open files of TCP Port range from 1-1024
+`lsof -i -u^root`: Exclude a particular user root
+`lsof -i`: Shows the list of all network connections `Listening and Established`
+
 ### `uptime`
 
 This is simple command which tells you the system uptime. 

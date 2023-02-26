@@ -103,6 +103,14 @@ Some of the most used flags are:
 
 ### `rsync`
 
+This command is used to transfer a file/directories to a remote location over a remote shell. It is fast and provides incremental transfer by only transferring the difference between source and destination. 
+
+This is pre-installed tool depending on your Linux distro, but if not it can be easily installed using your distribution package manager `sudo apt install rsync` or `sudo yum install rsync`
+
+
+
+
+
 ### `top`
 
 ### `ps`

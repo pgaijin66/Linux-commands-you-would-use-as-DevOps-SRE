@@ -166,6 +166,21 @@ Runs in secure mode
 
 ### `ps`
 
+This command is used to display or view information related to processes running in a Linux system. The output of PS will have the following output
+
+-PID: Unique process ID
+-TTY: The type of terminal that the user is logged into
+-Time: Time for which the process has been running for
+-CMD: The command that launches the process. 
+
+Some of the commonly used commands are listed below:
+
+`ps ax` This will display all current running processes
+`ps aux` This will display the processes in BSD format
+`ps -ef` This will display the processes in full format list
+`ps -u suhail` This will diplay processes for user suhail
+`ps -fG group_name`: This will display processe for a group
+
 ### `lsof`
 
 ### `uptime`

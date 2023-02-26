@@ -107,9 +107,35 @@ This command is used to transfer a file/directories to a remote location over a 
 
 This is pre-installed tool depending on your Linux distro, but if not it can be easily installed using your distribution package manager `sudo apt install rsync` or `sudo yum install rsync`
 
+The basic syntax of rsync command is `rsync options source destination`
 
+Some of the commonly used flags in rsysnc are: 
 
+-v: verbose
+-r: copies file recursivelt
+-a: archive mode
+-z: compress file data
+-h: human readable format
+--max-size: Set the max size for file transfer
+--include: you could use it for file extenstion '*.txt'
+--exlude: can be used to exclude file
+--remove-source-files: remove source file after rsync is complete
+--dry-run
 
+In the following example, we are copying file from existing directory into a new directory
+
+`rsync -zvh file1 fold1/`
+If the destination does not exists, rysync will create that destination folder as well. 
+
+To copy a file on a new machine, you can use the following command: 
+`rsync -avzh /fold1 root@192.168.0.1:/root/`
+This will copy the content of the folder in the home directory of root user. 
+
+To copy a file from a remote server using sshm you can use the following command: 
+`rsync -avzhe ssh root@192.168.0.1:/root/file1 /tmp`
+
+It's highly recommended to use dry run before you rsync, the output will tell you what will be synced across:
+`rsync --dry-run -zvh source destination`
 
 ### `top`
 

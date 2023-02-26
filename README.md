@@ -163,7 +163,6 @@ This command will list all the process for the user Suhail
 
 `top -s`
 Runs in secure mode
-
 ### `ps`
 
 This command is used to display or view information related to processes running in a Linux system. The output of PS will have the following output
@@ -180,7 +179,6 @@ Some of the commonly used commands are listed below:
 `ps -ef` This will display the processes in full format list
 `ps -u suhail` This will diplay processes for user suhail
 `ps -fG group_name`: This will display processe for a group
-
 ### `lsof`
 
 This command will list all open files (as per man)
@@ -193,7 +191,6 @@ Some of the most used commands are below:
 `lsof -i TCP:1-1024`: Open files of TCP Port range from 1-1024
 `lsof -i -u^root`: Exclude a particular user root
 `lsof -i`: Shows the list of all network connections `Listening and Established`
-
 ### `uptime`
 
 This is simple command which tells you the system uptime. 
@@ -203,6 +200,19 @@ Some of the commonly used uptime commands are:
 `uptime -p`: Pretty flag
 `uptime -s`: Uptime since
 ### `dmesg`
+
+This will display kernel-related messages used to control Kernel ring buffer. The output contains messages produced by the device drivers. 
+
+This [link](https://www.howtogeek.com/449335/how-to-use-the-dmesg-command-on-linux/) has detailed explanation on how Linux's Ring Buffer works. 
+
+dmesg has to be used with root privleges
+
+Some of the frequently used commands are: 
+
+`sudo dmesg -l info` Extracting messages using -l level to list all informational messages
+`sudo dmesg -l debug,notice` Extracting messages (combining debug and notice) to extract debug and notice 
+`sudo dmesg --level=err,warn` Extracting messages with error logs and warning messages
+`sudo dmesg | grep -i eth0` Extracting message for eth0 user interface
 
 ### `netstat`
 

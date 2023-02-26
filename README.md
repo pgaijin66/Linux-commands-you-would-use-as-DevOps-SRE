@@ -216,6 +216,23 @@ Some of the frequently used commands are:
 
 ### `netstat`
 
+This command gives you information about network connections, the ports that are in use, and the processes which are using them. 
+
+If this tool is not installed, you can install it by using the command
+
+`sudo apt install net-tools` (Debian)
+
+Some of the commonly used netstat commands are listed below:
+
+`netstat -a` Output all connected and waiting sockets
+`netstat -at` All TCP connection
+`netstat -au` All UDP connection
+`netstat -l` Sockets that are in listening state
+`netstat -st` Statistics options with TCP
+`netstat -p -at` Shows process names and PID
+`netstat -r` This shows the routing table
+`netstat -i` Shows all network interfaces
+
 ### `ss`
 
 ### `strace`

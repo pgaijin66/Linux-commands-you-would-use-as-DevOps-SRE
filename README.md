@@ -113,6 +113,7 @@ Swap:         2.1Gi        36Mi       2.0Gi
 
 4. If `used` field for `swap` is high or changing, then there might be a change server is paging to disk which is not a good sign. Requires futher investigation.
 
+---
 
 ### `du / df`
 
@@ -128,7 +129,6 @@ Summarize disk usage of each FILE, recursively for directories.
 Displays the amount of disk space available on the file system containing each file name argument.  If no file name is given, the space available on all currently mounted file systems is shown.  Disk space is shown in 1K blocks by default, unless the environment variable POSIXLY_CORRECT is set, in which case 512-byte blocks are used.
 
 If an argument is the absolute file name of a disk device node containing a mounted file system, df shows the space available on that file system rather than on the file system containing the device node.  This version  of  df  cannot  show  the  space  available  on unmounted filesystems, because on most kinds of systems doing so requires very nonportable intimate knowledge of file system structures.
-
 
 #### Usage
 
@@ -185,6 +185,8 @@ tmpfs                        101K     5  101K    1% /run/user/1000
 1. `df -ih` can be used to check the number of available inodes allocated to each file system.
 
 
+---
+
 ### `rsync`
 
 #### Description
@@ -238,113 +240,216 @@ $ rsync -avzP src_directory dest_directory --exclude=".cache"
 
 2. `rsync` does not recurse into directories by defaylt. You would need to use `-r` option to recurse or `-a` explicitly which is equivalent of `-rlptgoD`. Expained [here](https://explainshell.com/explain?cmd=rsync+-rlptgoD)
 
+---
 
 ### `top`
 
+
+---
+
 ### `ps`
 
+
+---
 ### `lsof`
 
+
+---
 ### `uptime`
 
+
+---
 ### `dmesg`
 
+---
 ### `netstat`
 
+
+---
 ### `ss`
 
+
+---
 ### `strace`
 
+
+---
 ### `tcpdump`
 
+
+---
 ### `sar`
 
+
+---
 ### `vmstat`
 
+
+---
 ### `iostat`
 
+
+---
 ### `pidstat`
 
+
+---
 ### `mpstat`
 
+
+---
 ### `lscpu`
 
+
+---
 ### `uname`
 
+
+---
 ### `grep`
 
+
+---
 ### `find`
 
+
+---
 ### `sort`
 
+
+---
 ### `head`
 
+
+---
 ### `tail`
 
+
+---
 ### `basepath`
 
+
+---
 ### `realpath`
 
+
+---
 ### `tar`
 
+
+---
 ### `sed`
 
+
+---
 ### `awk`
 
+
+---
 ### `cut`
 
+
+---
 ### `tr`
 
+
+---
 ### `dig`
 
+
+---
 ### `nslookup`
 
+
+---
 ### `nc`
 
+
+---
 ### `traceroute`
 
+
+---
 ### `tracepath`
 
+
+---
 ### `ethtool`
 
+
+---
 ### `iperf`
 
+
+---
 ### `dd`
 
+
+---
 ### `ping`
 
+
+---
 ### `host`
 
+
+---
 ### `tracepath`
 
+
+---
 ### `ip`
 
+
+---
 ### `uniq`
 
+
+---
 ### `diff`
 
+
+---
 ### `ssh-keygen`
 
+
+---
 ### `ln`
 
+
+---
 ### `curl`
 
+
+---
 ### `wget`
 
+
+---
 ### `atop / htop`
 
+
+---
 ### `kill`
 
+
+---
 ### `fdisk`
 
+
+---
 ### `lsblk`
 
+
+---
 ### `mkfs`
 
+
+---
 ### `mount / umount`
 
 
-
+---
 ## Contributing
 
 If you've ever wanted to contribute to open source, and a great cause, now is your chance!

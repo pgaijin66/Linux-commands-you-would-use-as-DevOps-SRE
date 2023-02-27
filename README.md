@@ -10,26 +10,8 @@ The following are the commands that you would beed to be aware and have a good h
 
 - [Commands](#commands)
   - [`free`](#free)
-    - [Description](#description)
-    - [Usage](#usage)
-    - [Things to know about `free`](#things-to-know-about-free)
   - [`du / df`](#du--df)
-    - [Description](#description)
-    - [Usage](#usage)
-      - [`du` with max depth of 3](#du-with-max-depth-of-3)
-      - [Show output in human readable form](#show-output-in-human-readable-form)
-      - [Show number of available inodes](#show-number-of-available-inodes)
-    - [Things to know about `du/df`](#things-to-know-about-dudf)
   - [`rsync`](#rsync)
-    - [Description](#description)
-    - [Usage](#usage)
-      - [Dry run before actually running](#dry-run-before-actually-running)
-      - [Differential backup](#differential-backup)
-      - [recursively copy, archive mode, show verbose, use compression, preserve partial files, display progress](#recursively-copy-archive-mode-show-verbose-use-compression-preserve-partial-files-display-progress)
-      - [`rsync` over `ssh`](#rsync-over-ssh)
-      - [`rsync` over `ssh` adding other ssh optoins](#rsync-over-ssh-adding-other-ssh-optoins)
-      - [Exclude certain files](#exclude-certain-files)
-    - [Things to know about `rsync`](#things-to-know-about-rsync)
   - [`top`](#top)
   - [`ps`](#ps)
   - [`lsof`](#lsof)
@@ -367,12 +349,9 @@ $ rsync -avzP src_directory dest_directory --exclude=".cache"
 
 If you've ever wanted to contribute to open source, and a great cause, now is your chance!
 
-[![All Contributors](https://img.shields.io/github/all-contributors/all-contributors/all-contributors?color=ee8449&style=flat-square)](#contributors-)
-
-
 ## Our Contributors
 
-Thanks go to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks go to these wonderful people:
 
 <a href="https://github.com/pgaijin66/Linux-commands-you-would-use-as-DevOps-SRE/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=pgaijin66/Linux-commands-you-would-use-as-DevOps-SRE" />

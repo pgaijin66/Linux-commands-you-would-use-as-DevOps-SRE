@@ -454,6 +454,14 @@ $ rsync -avzP src_directory dest_directory --exclude=".cache"
 
 If you've ever wanted to contribute to open source, and a great cause, now is your chance!
 
+To maintain a conistency we recommend this creating a new PR, please add followings:
+
+1. `Description` - short easy to remember description with link to man page.
+
+2. `Usage` - listing out real worl usage which are not easy to find.
+
+3. `Things to know` - List out the gotchas and good to know things about that command
+
 ## Our Contributors
 
 Thanks go to these wonderful people:

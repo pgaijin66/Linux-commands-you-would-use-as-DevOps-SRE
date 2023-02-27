@@ -238,7 +238,7 @@ $ rsync -avzP src_directory dest_directory --exclude=".cache"
 
 1. `rsync` is a versatile tool but running it without knowing what the options are used for, can cause some destructive output. So, use `--dry-run` before running your command.
 
-2. `rsync` does not recurse into directories by defaylt. You would need to use `-r` option to recurse or `-a` explicitly which is equivalent of `-rlptgoD`. Expained [here](https://explainshell.com/explain?cmd=rsync+-rlptgoD)
+2. `rsync` does not recurse into directories by default. You would need to use `-r` option to recurse or `-a` explicitly which is equivalent of `-rlptgoD`. Expained [here](https://explainshell.com/explain?cmd=rsync+-rlptgoD)
 
 ---
 

@@ -438,6 +438,20 @@ The basic difference between these are:
 
 ### `find`
 
+This is another popular tool which is constantly used to search for a file in directory hirarchy. 
+
+A simple use case is `find . -name filename`
+This will search for filename in your current directory. 
+
+I find this command quite handy when working on Git repositories where I have work from the main directory. (This could be for multiple reasons)
+
+Some of the most commonly used flags are listed below: 
+
+`find ./root -name *.txt `: Search with a pattern
+`find ./root -name file.txt -exec rm -i {} \;` Find and delete (USE with Caution)
+`find ./root -empty` Search for empty files and directories
+`find ./root -perm 224` Search for file with given perm 224
+
 ### `sort`
 
 ### `head`

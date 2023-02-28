@@ -276,6 +276,37 @@ You can also format the output and use regex expressions with strace
 `strace -e trace=fstat whoami`: This filters to output only fstat syscalls. 
 ### `tcpdump`
 
+This is another popular network diagnostic tool used for network analysis.  
+
+Let's start with something very basic: 
+
+`tcpdump -i eth0` will give you network traffic information on interface eth0. You need to hit CtrL+C/Z to exit from the terminal. 
+
+`tcpdump host 8.8.8.8`: This will listen for traffic coming or going out to 8.8.8.8
+
+You can filter it by source or destination using: 
+
+`tcpdump src 1.1.1.1`
+`tcpdump dst 1.1.1.1`
+
+If you want to listen to traffic from a particular network: 
+
+`tcpdump net 1.2.3.4/24`
+
+If you want to listen to traffic from a specific port
+
+`tcpdump port 22`
+`tcpdump src port 22`
+
+With TCPDUMP, you can use the following flags to combine multiple entries together: 
+
+* AND
+* OR
+* EXCEPT
+`tcpdump dst 1.1.1.1 and src net and not icmp`
+
+There are much more advanced features of tcpdump which will cobvered later here. 
+
 ### `sar`
 
 ### `vmstat`

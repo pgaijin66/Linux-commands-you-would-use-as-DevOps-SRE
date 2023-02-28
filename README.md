@@ -366,8 +366,20 @@ Blk_read/s: The amount of data read from the device
 Blk_wrt/s: The amount of data written to the device
 Blk_read: The number of blocks read
 Blk_wrtn: The number of blocks written
-
 ### `pidstat`
+
+This is tool used to report statitics on Linux task. This can either monitor a specific PID or all the processes running on a system. 
+
+If you use `pidstat -p ALL`, this will report performance montoring stats for all the proess. 
+
+If you want to run it against a particular process, you will can type 
+`pdstat -p 1234` where 1234 is the PID
+
+If you know the name of the process, you can type 
+`pdstat -C "httpd"` where httpd is the name of the process
+
+If you want to repeat this in certain interval, you can run 
+`pdstat -p 1234 1` (repeats every second)
 
 ### `mpstat`
 
@@ -406,6 +418,8 @@ Blk_wrtn: The number of blocks written
 ### `nc`
 
 ### `traceroute`
+
+This 
 
 ### `tracepath`
 

@@ -262,6 +262,18 @@ SS Vs netstat: SS seems to be a popular tool for networking stats and can also b
 
 ### `strace`
 
+This command will trace for system calls and signals (as per man). This command is useeful when the source code is not readily available and can be used to intercept and records any syscall made by a command. 
+
+For example if you type `strace ls`, it will intercept and records all syscalls made by this command. 
+
+Some of the widely commands are listed below: 
+
+`strace -t whoami`: Records timing and duration information
+`strace -c whoami`: Gives statistics and reports it
+
+You can also format the output and use regex expressions with strace
+
+`strace -e trace=fstat whoami`: This filters to output only fstat syscalls. 
 ### `tcpdump`
 
 ### `sar`

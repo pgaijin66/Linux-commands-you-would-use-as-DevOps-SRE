@@ -353,6 +353,20 @@ Some of the widely popular vmstat commands are listed below:
 
 ### `iostat`
 
+This tool is used for monitoring system I/O device loading as well CPU statistics.
+
+If you type `iostat` without any flags, it will output CPU and I/O information for every partition of file system
+
+If you want the output in MB, you can type `iostat -m`
+
+The following colummns are shown in output: 
+
+tps: Number of transfer per second that was issued. 
+Blk_read/s: The amount of data read from the device
+Blk_wrt/s: The amount of data written to the device
+Blk_read: The number of blocks read
+Blk_wrtn: The number of blocks written
+
 ### `pidstat`
 
 ### `mpstat`

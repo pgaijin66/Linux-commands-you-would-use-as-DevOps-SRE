@@ -383,6 +383,14 @@ If you want to repeat this in certain interval, you can run
 
 ### `mpstat`
 
+As per man, mpstat is a tool used to report on processors related statistics. This will accurately display the statics of CPU usage of the system. 
+
+You can run `mpstat` without any flag but if you type `mpstat -P ALL`, this will give you an ouput all the processor in the system. 
+
+The following command will display the processor number of all the CPUs working `mpstat -A`
+
+If you want to filter it by specific proessor, you can type `mpstat -P 0` This will show an output for 0th processor. 
+
 ### `lscpu`
 
 ### `uname`

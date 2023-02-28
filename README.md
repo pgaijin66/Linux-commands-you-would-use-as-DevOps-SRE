@@ -235,6 +235,31 @@ Some of the commonly used netstat commands are listed below:
 
 ### `ss`
 
+As per man, this is another tool to investiage sockets on a Linux machine. This is used for gathering network information and troubleshooting network issues. 
+
+The output of `ss` will list down all the open sockets (non listening) with established connections. 
+
+The output column shows the following:
+
+* Netid: Type of socket, TCP, UDP, u_str (Unix stream),  u_seq (Unix sequence)
+* State: Listening, Established
+* Recv-Q: Packets Received
+* Send-Q: Packets sent
+* Local address port: Address of local machine and port
+* Peer address port: Remote machine and port
+
+Some of the commonly used `ss` commands is listed below: 
+
+`ss -a` : Shows all listening and non-listening connections
+`ss- l`: Shows listening sockets
+`ss -t`: Shows TCP connections
+`ss -u`: Shows UDP connections
+`ss dst 1.1.1.1`: Filters by destination IP
+`ss src 1.1.1.1`: Filters by source IP
+`ss -p`: Shows process ID use
+
+SS Vs netstat: SS seems to be a popular tool for networking stats and can also be seen as an alternative to netstat, it is lightweight, faster and has better filtering options. 
+
 ### `strace`
 
 ### `tcpdump`

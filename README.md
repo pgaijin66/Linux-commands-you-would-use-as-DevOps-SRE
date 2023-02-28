@@ -413,6 +413,29 @@ This command will can be further combined with the following flags to find furth
 
 ### `grep`
 
+This is the most commonly used search tool in Linux which prints output based on string and pattern matching. It's widely used by pipe command.  
+
+A simple example could be: Let's say you have a file with a,b and c in three lines. If you type `cat filename | grep a`, it will show the output a. Alternatively you can run `grep a filename`
+
+Some of the most commonly used grep commands are listed below: 
+
+`grep -i`: case insensitive
+`grep -r`: recursive
+`grep -R`: recursive dereference
+`grep -v`: Invert match
+`grep -E`: Extended regexp
+
+You can use a combination of grep in a simple command
+
+`grep -i -r filename`
+
+While the command for both grep and fgrep is the same:
+`grep [options] pattern [files]`
+`fgrep [options] pattern [files]`
+
+The basic difference between these are:
+* fgrep interprets the Pattern as a list of fixed strings separated by newlines but grep has always been interpreted as regular expressions.
+
 ### `find`
 
 ### `sort`

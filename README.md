@@ -475,7 +475,18 @@ Some of the commonly used flags are:
 
 ### `head`
 
+This tool is used to display first lines of a file. If you have file with multiple lines, and if you type `head filename` it will show the first 10 lines of the file. 
+
+Some of the widely used head commands are listed below:
+
+`head -n 5`: Number of lines to output
+`head -c 6`: Prints the num bytes from the file specified
+`head -q`: Quite mode
+`head -v`: Verbose
+
 ### `tail`
+
+This is a reverse of `head` and will print out the last line of the filesystem. 
 
 ### `basepath`
 

@@ -393,7 +393,23 @@ If you want to filter it by specific proessor, you can type `mpstat -P 0` This w
 
 ### `lscpu`
 
+
+
 ### `uname`
+
+This tool is used to print system information of a Unix system. 
+
+This command will can be further combined with the following flags to find further information of the system. 
+
+-s: Kernel information
+-n: Node name
+-r: kernel release
+-v: kernel version
+-m: hardware name
+-p: processor architecture
+-i: hardware platform
+-o: operating system
+-a: all the above information
 
 ### `grep`
 

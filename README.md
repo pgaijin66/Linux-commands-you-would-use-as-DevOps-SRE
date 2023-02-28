@@ -309,7 +309,47 @@ There are much more advanced features of tcpdump which will cobvered later here.
 
 ### `sar`
 
+This command is used to get performance statics of different metrics for both real time and historical data. 
+
+It does not come by default on most linux distros, but can be easily installed using the following commands
+
+`sudo apt install sysstat`
+`sudo dnf install sysstat`
+
+It's also a good idea to enable and start this process after you have finished installing it. 
+
+`sudo systemctl enable sysstat`
+`sudo systemctl start sysstat`
+
+Start with the following command
+
+`sar -u 2 3`
+
+This shows CPU stats in steps of two seconds for three sets of data. 
+
+`sar -P 1 1 3`
+
+This will show thress sets of data with 1 second between them for core 1. 
+
+`sar -b 4 3`
+
+This show I/O transfer data for 3 data with 4 seconds in between them. 
+
 ### `vmstat`
+
+This is another popular tool to report on virtual memory statistics.
+
+This [link](https://access.redhat.com/solutions/1160343) has useful information on how to read the ouput of vmstat command. 
+
+The basic syntax of vmstat looks like this: 
+`vmstat [options][delay [count]]`
+
+Some of the widely popular vmstat commands are listed below:
+
+`vmstat -a`: Replaces buff and cache memory with active and inactive
+`vmstat -s`: More detailed information
+`vmstat -d`: Quick disk statistics
+`vmstat -t`: Adds Timestamp information 
 
 ### `iostat`
 

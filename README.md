@@ -454,6 +454,25 @@ Some of the most commonly used flags are listed below:
 
 ### `sort`
 
+As the name suggests, this tool is used to sort lines of a text file.
+
+Let's say for example, if you have file with the following content
+f
+x
+q
+
+If you type in `sort filename`, it will sort the filename in alpabhetical order. Similarly if you have a file with integars, it will arrange in ascending order. If you have a file with a combination of strings and integars, it will sort both string and integar but will output the integar first followed by string.
+
+Please note that sort by default does not change the output of the file. 
+You will need to use `sort filename > filename2` 
+
+Some of the commonly used flags are: 
+
+`sort -r` Reverse order
+`sort -nr`: Reverse numerical order
+`sort -c`: Checks if the file is already sorted
+`sort -m`: Sort by month
+
 ### `head`
 
 ### `tail`

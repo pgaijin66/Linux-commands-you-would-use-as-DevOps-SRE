@@ -103,7 +103,7 @@ Some of the most used flags are:
 
 ### `rsync`
 
-This command is used to transfer a file/directories to a remote location over a remote shell. It is fast and provides incremental transfer by only transferring the difference between source and destination. 
+This command is used to transfer a file/directories to a  location over a  shell. It is fast and provides differential transfer by only transferring the difference between source and destination. 
 
 This is pre-installed tool depending on your Linux distro, but if not it can be easily installed using your distribution package manager `sudo apt install rsync` or `sudo yum install rsync`
 
@@ -162,7 +162,7 @@ Some of the most used commands are listed below
 This command will list all the process for the user Suhail
 
 `top -s`
-Runs in secure mode
+Runs in secure mode and has to run with root priveleges. By default top opens the console in interactive mode with full access to the system. In secure mode some information such as process owner and command line is hidden by default. Overall running top command in secure mode is good practice to enhance security and ensure that only authorised users have access to sensitive information. 
 ### `ps`
 
 This command is used to display or view information related to processes running in a Linux system. The output of PS will have the following output
@@ -391,10 +391,6 @@ The following command will display the processor number of all the CPUs working 
 
 If you want to filter it by specific proessor, you can type `mpstat -P 0` This will show an output for 0th processor. 
 
-### `lscpu`
-
-
-
 ### `uname`
 
 This tool is used to print system information of a Unix system. 
@@ -488,68 +484,28 @@ Some of the widely used head commands are listed below:
 
 This is a reverse of `head` and will print out the last line of the filesystem. 
 
-### `basepath`
-
-### `realpath`
-
 ### `tar`
 
-### `sed`
+This is an archiving utility used to archive and extract the archived files. 
 
-### `awk`
+The basic syntax of tar looks like this: 
+`tar [options] [archive-file] [file or directory to be archived]`
 
-### `cut`
+The following options can be used:
+-c : Creates Archive 
+-x : Extract the archive 
+-f : creates archive with given filename 
+-t : displays or lists files in archived file 
+-u : archives and adds to an existing archive file 
+-v : Displays Verbose Information 
+-A : Concatenates the archive files 
+-z : zip, tells tar command that creates tar file using gzip 
+-j : filter archive tar file using tbzip 
+-W : Verify a archive file 
+-r : update or add file or directory in already existed .tar file 
 
-### `tr`
+`tar cvf file.tar *.c`
+The above command will create a tar file `file.tar` with the archive of all `.c` files in the current directory. 
 
-### `dig`
-
-### `nslookup`
-
-### `nc`
-
-### `traceroute`
-
-This 
-
-### `tracepath`
-
-### `ethtool`
-
-### `iperf`
-
-### `dd`
-
-### `ping`
-
-### `host`
-
-### `tracepath`
-
-### `ip`
-
-### `uniq`
-
-### `diff`
-
-### `ssh-keygen`
-
-### `ln`
-
-### `curl`
-
-### `wget`
-
-### `atop / htop`
-
-### `kill`
-
-### `fdisk`
-
-### `lsblk`
-
-### `mkfs`
-
-### `mount / umount`
 
 
